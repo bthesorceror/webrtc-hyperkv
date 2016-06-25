@@ -1,0 +1,21 @@
+span.container {
+  margin-left: 10px;
+}
+
+form input[type=submit] {
+  margin-left: 20px;
+}
+
+div#peer-count {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+table {
+  padding-top: 40px;
+  margin: 10px;
+}
+
+table tr td,th {
+  width: 300px;
+}

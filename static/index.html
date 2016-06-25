@@ -2,8 +2,32 @@
 <html>
   <head>
     <title>WebRTC Database</title>
+    <link rel="stylesheet" href="application.css" />
   </head>
   <body>
+    <div id="peer-count">
+      0 Connections
+    </div>
+    <form id="update-form">
+      <span class="container">
+        <label for="key">Key</label>
+        <input name="key" type="text" />
+      </span>
+      <span class="container">
+        <label for="value">Value</label>
+        <input name="value" type="text" />
+      </span>
+      <input type="submit" value="Update" />
+    </form>
+    <table id="values-table">
+      <thead>
+        <tr>
+          <th>KEY</th>
+          <th>VALUE</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
     <script src="application.bundle.js"></script>
   </body>
 </html>

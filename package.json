@@ -5,15 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -o static/application.bundle.js client/application.js",
-    "watch": "watchify -o static/application.bundle.js client/application.js"
+    "build": "browserify -t [ babelify --presets [ es2015 react ] ] -o static/application.bundle.js client/application.js",
+    "watch": "watchify -t [ babelify --presets [ es2015 react ] ] -o static/application.bundle.js client/application.js",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
     "browserify": "^13.0.1",
     "ecstatic": "^1.4.1",
-    "watchify": "^3.7.0"
+    "hyperkv": "^1.7.0",
+    "hyperlog": "^4.10.0",
+    "jquery": "^3.0.0",
+    "level-browserify": "^1.1.0",
+    "signalhub": "^4.7.4",
+    "subleveldown": "^2.1.0",
+    "watchify": "^3.7.0",
+    "webrtc-swarm": "^2.6.0"
   }
 }
