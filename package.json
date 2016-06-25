@@ -1,0 +1,19 @@
+{
+  "name": "webrtc-hyperkv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -o static/application.bundle.js client/application.js",
+    "watch": "watchify -o static/application.bundle.js client/application.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "ecstatic": "^1.4.1",
+    "watchify": "^3.7.0"
+  }
+}
